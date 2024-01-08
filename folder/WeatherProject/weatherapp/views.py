@@ -13,10 +13,8 @@ def index(request):
 
         data = {
             "temp": str(list_of_data['main']['temp']) + ' °C',
-            "pressure": str(list_of_data['main']['pressure']),
             "humidity": str(list_of_data['main']['humidity']) + ' %',
             'description': str(list_of_data['weather'][0]['description']),
-            'icon': list_of_data['weather'][0]['icon'],
         }
         print(data)
     else:
